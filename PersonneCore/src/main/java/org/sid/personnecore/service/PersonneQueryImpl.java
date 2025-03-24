@@ -1,5 +1,6 @@
 package org.sid.personnecore.service;
 
+import lombok.AllArgsConstructor;
 import org.sid.personnecore.coreDTO.PersonneCoreDTO;
 import org.sid.personnecore.mapper.PersonneMapper;
 import org.sid.personnecore.module.Personne;
@@ -12,11 +13,10 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
+@AllArgsConstructor
 public class PersonneQueryImpl implements IPersonneQuery {
-    @Autowired
-    private PersonneRepository personneRepository;
 
-    @Autowired
+    private PersonneRepository personneRepository;
     private PersonneMapper personneMapper;
     @Override
     public List<PersonneCoreDTO> getAllPersonnes() {

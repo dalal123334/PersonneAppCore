@@ -13,6 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/personnes")
 @AllArgsConstructor
+@CrossOrigin(origins = "*")
 public class PersonneApi {
     private IPersonneService iPersonneService;
     private IPersonneQuery iPersonneQuery;
