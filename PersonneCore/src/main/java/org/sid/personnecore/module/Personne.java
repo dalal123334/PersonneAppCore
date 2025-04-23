@@ -20,4 +20,6 @@ public class Personne {
     private String adresse;
     @Column(name = "age")
     private int age;
+    private String email;
+
 }

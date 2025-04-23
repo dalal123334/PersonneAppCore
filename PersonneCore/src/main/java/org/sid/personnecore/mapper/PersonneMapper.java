@@ -8,7 +8,7 @@ import org.sid.personnecore.module.Personne;
 
 @Mapper(componentModel = "spring")
 public interface PersonneMapper {
-    PersonneMapper INSTANCE = Mappers.getMapper(PersonneMapper.class);
+
     PersonneCoreDTO personneToPersonneCoreDTO(Personne personne);
     Personne personneCoreDTOToPersonne(PersonneCoreDTO personneCoreDTO);
 }
